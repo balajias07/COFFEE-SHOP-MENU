@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Wild Beans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>☕Cafe Wild Beans</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Fresh Coffee, Happy Moments</h2>
+            <p>Start your day with the perfect cup of coffee.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2 class="section-title">Our Menu ☕</h2>
+
+        <div class="menu-container">
+
+            <div class="coffee-card">
+                <div class="coffee-img">☕</div>
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with creamy milk foam.</p>
+                <h4>₹120</h4>
+                <button onclick="addToCart('Cappuccino', 120)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">☕</div>
+                <h3>Latte</h3>
+                <p>Smooth espresso with steamed milk.</p>
+                <h4>₹140</h4>
+                <button onclick="addToCart('Latte', 140)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">☕</div>
+                <h3>Americano</h3>
+                <p>Strong espresso with hot water.</p>
+                <h4>₹100</h4>
+                <button onclick="addToCart('Americano', 100)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">🍵</div>
+                <h3>Green Tea</h3>
+                <p>Fresh and healthy green tea.</p>
+                <h4>₹80</h4>
+                <button onclick="addToCart('Green Tea', 80)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">🥐</div>
+                <h3>Croissant</h3>
+                <p>Fresh and crispy buttery croissant.</p>
+                <h4>₹90</h4>
+                <button onclick="addToCart('Croissant', 90)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">🍰</div>
+                <h3>Chocolate Cake</h3>
+                <p>Delicious soft chocolate cake.</p>
+                <h4>₹160</h4>
+                <button onclick="addToCart('Chocolate Cake', 160)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cart-section">
+
+        <h2 class="section-title">Your Cart 🛒</h2>
+
+        <div id="cart"></div>
+
+        <h3 class="total">
+            Total: ₹<span id="total">0</span>
+        </h3>
+
+        <button class="order-btn" onclick="placeOrder()">
+            Place Order
+        </button>
+
+    </section>
+
+    <section id="about" class="about">
+
+        <h2 class="section-title">About Us</h2>
+
+        <p>
+            Welcome to Bean & Brew Coffee Shop!
+            We serve freshly brewed coffee, delicious snacks
+            and desserts made with love.
+        </p>
+
+        <p>
+            Our goal is to provide a comfortable place where
+            friends and families can relax and enjoy great coffee.
+        </p>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <form onsubmit="sendMessage(event)">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <h3>☕Cafe Wild Beans</h3>
+        <p>Fresh Coffee • Fresh Moments</p>
+        <p>© 2026 Cafe Wild Beans</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
