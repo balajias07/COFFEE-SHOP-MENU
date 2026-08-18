@@ -1,4 +1,4 @@
-# ☕ Bean & Brew Coffee Shop
+# ☕Cafe Wild Beans
 
 A responsive and interactive Coffee Shop website developed using **HTML, CSS, and JavaScript**. This project demonstrates front-end web development concepts by providing a modern coffee shop interface where users can browse the menu, add items to a shopping cart, calculate the total bill, and place an order.
 
